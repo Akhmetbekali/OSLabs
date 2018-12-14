@@ -1,0 +1,31 @@
+Initial compile & run:
+ali@DESKTOP-UPA2DDT:~/week12$ gcc copy.c -o copy
+ali@DESKTOP-UPA2DDT:~/week12$ time ./copy file1 file2
+
+real    0m0.015s
+user    0m0.000s
+sys     0m0.016s
+
+Changing DBUF_SIZE to 256:
+ali@DESKTOP-UPA2DDT:~/week12$ gcc -DBUF_SIZE=256 copy.c -o copy
+ali@DESKTOP-UPA2DDT:~/week12$ time ./copy file1 file2
+
+real    0m0.019s
+user    0m0.000s
+sys     0m0.016s
+
+Including O_SYNC:
+ali@DESKTOP-UPA2DDT:~/week12$ gcc copy.c -o copy
+ali@DESKTOP-UPA2DDT:~/week12$ time ./copy file1 file2
+
+real    0m0.014s
+user    0m0.000s
+sys     0m0.000s
+
+Including O_SYNC and changing DBUF_SIZE to 256:
+ali@DESKTOP-UPA2DDT:~/week12$ gcc -DBUF_SIZE=256 copy.c -o copy
+ali@DESKTOP-UPA2DDT:~/week12$ time ./copy file1 file2
+
+real    0m0.015s
+user    0m0.000s
+sys     0m0.016s

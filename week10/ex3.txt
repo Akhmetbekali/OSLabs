@@ -1,0 +1,8 @@
+29273397577911852 -rwxrwxrwx 1 ali ali 0 Oct 25 23:05 _ex3.txt
+29273397577911852 -rw-rw-rw- 1 ali ali 0 Oct 25 23:05 _ex3.txt
+29273397577911852 -rwxrwxrw- 1 ali ali 0 Oct 25 23:05 _ex3.txt
+29273397577911852 -rwxrwxrw- 1 ali ali 0 Oct 25 23:05 _ex3.txt
+
+660 means that only user and group are able to read & write file. Nobody is able to execute the file
+775 means that user and group are able to read & write & execute file. Other is able only to read & execute
+777 all members are able to read & write & execute the file 

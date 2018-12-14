@@ -1,0 +1,4 @@
+Increased Hit/Miss ratio means that sequence repeats. For instance, sequence 1 1 1 1 1 will hit already created page (1).
+
+Decreased Hit/Miss ratio means that all elements of sequence are unique. Example: 1 2 3 4 5 6 7 8 9 10
+Every time we will have a miss and new page will be created.
